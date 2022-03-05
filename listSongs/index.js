@@ -198,6 +198,18 @@ const songs = [
   {
     title: "Cinnamon Girl",
     artist: "Niel Young"
+  },
+  {
+    title: "Bertha",
+    artist: "Grateful Dead"
+  },
+  {
+    title: "Call Me the Breeze",
+    artist: "Lynrd Skynrd"
+  },
+  {
+    title: "Guitars, Cadillacs",
+    artist: "Dwight Yoakam"
   }
 ];
 

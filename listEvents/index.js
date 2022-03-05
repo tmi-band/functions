@@ -30,6 +30,10 @@ const venues = {
     casino_del_sol_tropico_lounge: {
         name: "Casino del Sol, Tropico Lounge",
         address: "5655 W Valencia Rd, Tucson, AZ"
+    },
+    del_webb: {
+        name: "Del Webb Community Clubhouse",
+        address: "10260 S Blendu Way, Vail, AZ"
     }
 };
 
@@ -153,9 +157,16 @@ const events = [
         venue: venues.ventana_cascade_lounge,
         start: "2020-06-27T20:30:00-07:00",
         end: "2020-06-27T23:30:00-07:00"
+    },
+    {
+        date: "March 19, 2022",
+        time: "6:00 - 9:00",
+        cost: "free",
+        venue: venues.del_webb,
+        start: "2022-03-19T18:00:00-07:00",
+        end: "2022-03-19T21:00:00-07:00"
     }
 ];
-
 
 exports.handler = async (event) => {
     const response = {

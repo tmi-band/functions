@@ -34,6 +34,14 @@ const venues = {
     del_webb: {
         name: "Del Webb Community Clubhouse",
         address: "10260 S Blendu Way, Vail, AZ"
+    },
+    spark_project_collective: {
+        name: "Spark Project Collective",
+        address: "4433 E Broadway Blvd, Tucson, AZ 85711"
+    },
+    armory_park: {
+        name: "Armory Park",
+        address: "222 S 5th Ave, Tucson, AZ, 85701"
     }
 };
 
@@ -165,13 +173,29 @@ const events = [
         venue: venues.del_webb,
         start: "2022-03-19T18:00:00-07:00",
         end: "2022-03-19T21:00:00-07:00"
+    },
+    {
+        date: "September 30, 2022",
+        time: "6:00 - 9:00",
+        cost: "$5.00",
+        venue: venues.spark_project_collective,
+        start: "2022-09-30T18:00:00-07:00",
+        end: "2022-09-30T21:00:00-07:00"
+    },
+    {
+        date: "October 15, 2022",
+        time: "12:00 - 1:00",
+        cost: "free",
+        venue: venues.armory_park,
+        start: "2022-10-15T12:00:00-07:00",
+        end: "2022-10-15T13:00:00-07:00"
     }
 ];
 
 exports.handler = async (event) => {
     const response = {
         statusCode: 200,
-        body: JSON.stringify({"events":events}),
+        body: JSON.stringify({ events: events })
     };
     return response;
 };
